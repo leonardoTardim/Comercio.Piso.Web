@@ -1,0 +1,50 @@
+﻿@model Comercio.Piso.Web.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCompletoRazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCompletoRazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApelidoNomeFantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApelidoNomeFantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPFCNPJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPFCNPJ)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href="@Url.Action("Edit", new { id=Model.Id })" class="btn btn-warning">Editar</a>|
+    <a href="@Url.Action("Index")" class="btn btn-success">Voltar à Lista</a>
+</p>
